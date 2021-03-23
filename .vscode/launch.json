@@ -6,10 +6,23 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App2",
+            "request": "launch",
+            "mainClass": "App2",
+            "projectName": "aoc15_6d0ea8b3"
+        },
+        {
+            "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "App",
             "projectName": "aoc15_6d0ea8b3"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App1"
         },
         {
             "type": "pwa-node",

@@ -2,19 +2,19 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.*;
 
-public class MyReader {
-    private static final String fileDir = "/Users/clarissadesimoni/Desktop/aoc15/day1/";
-    private String data;
-    public MyReader() {
+public class MyReader2 {
+    private static final String fileDir = "/Users/clarissadesimoni/Desktop/aoc15/day2/";
+    private List<String> data;
+    public MyReader2() {
+        this.data = new ArrayList<String>();
         try {
-            BufferedReader br = new BufferedReader(new FileReader(fileDir + "day1.txt"));
-            StringBuilder sb = new StringBuilder();
+            BufferedReader br = new BufferedReader(new FileReader(fileDir + "day2.txt"));
             String line;
             while((line = br.readLine()) != null) {
-                sb.append(line);
+                this.data.add(line);
             }
-            this.data = sb.toString();
             br.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -23,7 +23,7 @@ public class MyReader {
         }
     }
 
-    public String getData() {
+    public List<String> getData() {
         return this.data;
     }
 }

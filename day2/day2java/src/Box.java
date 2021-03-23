@@ -21,4 +21,13 @@ public class Box {
         List<Integer> a = this.getAreas();
         return 2 * a.stream().mapToInt(i -> i).sum() + a.stream().mapToInt(i -> i).min().getAsInt();
     }
+
+    public int getRibbon() {
+        List<Integer> d = new ArrayList<Integer>();
+        d.add(this.length);
+        d.add(this.width);
+        d.add(this.height);
+        Collections.sort(d);
+        return d.stream().mapToInt(i -> i).reduce(1, (a, b) -> a * b) + (2 * (d.get(0) + d.get(1)));
+    }
 }
