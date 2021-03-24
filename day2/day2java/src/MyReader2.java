@@ -6,9 +6,8 @@ import java.util.*;
 
 public class MyReader2 {
     private static final String fileDir = "/Users/clarissadesimoni/Desktop/aoc15/day2/";
-    private List<String> data;
+    private List<String> data = new ArrayList<String>();
     public MyReader2() {
-        this.data = new ArrayList<String>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileDir + "day2.txt"));
             String line;
