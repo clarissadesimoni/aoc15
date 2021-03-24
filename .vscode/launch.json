@@ -6,17 +6,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App5",
+            "request": "launch",
+            "mainClass": "App5",
+            "projectName": "aoc15_6d0ea8b3"
+        },
+        {
+            "type": "java",
             "name": "Launch App4",
             "request": "launch",
             "mainClass": "App4",
             "projectName": "aoc15_6d0ea8b3"
-        },
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
@@ -34,16 +34,17 @@
         },
         {
             "type": "java",
-            "name": "Launch App",
+            "name": "Launch App1",
             "request": "launch",
-            "mainClass": "App",
+            "mainClass": "App1",
             "projectName": "aoc15_6d0ea8b3"
         },
         {
-            "type": "java",
-            "name": "Launch App",
+            "name": "Python: Current File",
+            "type": "python",
             "request": "launch",
-            "mainClass": "App1"
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
         {
             "type": "pwa-node",
