@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "day9/day9java/lib/guava-23.0.jar",
+        "day9/day9java/lib/guava-gwt-23.0.jar"
+    ]
+}
